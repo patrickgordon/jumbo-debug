@@ -2,6 +2,7 @@ const style = "text-decoration: none;";
 
 function checkIfDebug(ref, translationId) {
 	const isAlreadyDebug =$(ref).find(`abbr[title='${translationId}']`).length > 0;
+
 	return isAlreadyDebug;
 }
 
@@ -41,8 +42,6 @@ chrome.runtime.onMessage.addListener(
 		// listens for the messages coming from background.js. ATM they do the same thing but leaving in a
 		// loop incase we need to seperate behaviour differently.
 		if (request.message === "clicked_browser_action") {
-			applyDebug();
-		} else if (request.message === "navigated_via_push") {
 			applyDebug();
 		}
 	}
