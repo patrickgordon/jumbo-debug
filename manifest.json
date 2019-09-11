@@ -10,8 +10,8 @@
 				"http://*.dev.lan/*",
 				"https://*.dev.lan/*",
 				"https://*.jumdev.com/*",
-				"https://ozlotteries.com/*",
-				"https://materlotteries.com.au/*"
+				"https://*.ozlotteries.com/*",
+				"https://*.materlotteries.com.au/*"
 			],
 			"js": [
 				"jquery-3.4.1.min.js",
