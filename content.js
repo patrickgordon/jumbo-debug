@@ -1,7 +1,7 @@
 const style = "text-decoration: none;";
 
 function checkIfDebug(ref, translationId) {
-	const isAlreadyDebug =$(ref).find(`abbr[title='${translationId}']`).length > 0;
+	const isAlreadyDebug = $(ref).find(`abbr[title='${translationId}']`).length > 0;
 
 	return isAlreadyDebug;
 }
@@ -22,7 +22,7 @@ function applyDebug() {
 			if (translationId && !checkIfItemAlreadyDebug) {
 				const indicator = `
 					<abbr data-id="translation_debug" style="${style}" title=${translationId}>
-						<i class="icon__dev icon--inherit"/>
+						?
 					</abbr>
 				`;
 

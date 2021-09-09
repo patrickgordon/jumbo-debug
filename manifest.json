@@ -1,17 +1,13 @@
 {
 	"manifest_version": 2,
 	"name": "Jumbo Debug",
-	"version": "0.1",
+	"version": "0.3",
 	"description": "A debug tool for sites Powered by Jumbo.",
 	"author": "Patrick Gordon",
 	"content_scripts": [
 		{
 			"matches": [
-				"http://*.dev.lan/*",
-				"https://*.dev.lan/*",
-				"https://*.jumdev.com/*",
-				"https://*.ozlotteries.com/*",
-				"https://*.materlotteries.com.au/*"
+				"<all_urls>"
 			],
 			"js": [
 				"jquery-3.4.1.min.js",
@@ -24,10 +20,8 @@
 		"48": "debug.png",
 		"32": "debug.png",
 		"128": "debug.png"
-	  },
-	"permissions": [
-		"webNavigation"
-	],
+	},
+	"permissions": [],
 	"background": {
 		"scripts": [
 			"background.js"
